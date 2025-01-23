@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="icon" href="images/weather-forecast-symbol.png" type="image/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weatherStyle.css">
+</head>
+
+<body>
+    <div class="wholeDiv">
+        <div class="citySearchDiv">
+            <input type="search" placeholder="Enter City Name" id="input">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="forcastDiv">
+            <h1 id="city">Hyderabad</h1>
+            <img src="images/clouds.png" alt="Can't load" class="weatherIMG">
+            <h1 id="temp">27°C</h1>
+            <h5 id="decrip">Heavy rains</h6>
+                <div class="inner">
+                    <div class="hum">
+                        <div class="innerHum">
+                            <img src="images/humidity.png" alt="Can't load">
+                            <h4 id="humidity">90%</h4>
+                        </div>
+                        <h6>Humidity</h6>
+                    </div>
+
+                    <div class="windSpeed">
+                        <div class="innerWind">
+                            <img src="images/wind.png" alt="Can't load">
+                            <h4 id="wSpeed">100 km/hr</h4>
+                        </div>
+                        <h6>Wind Speed</h6>
+                    </div>
+                </div>
+
+        </div>
+        <h3 id="err"></h3>
+       
+    </div>
+
+    <script src="weather.js"> </script>
+        
+
+   
+</body>
+
+</html>
